@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 - Page Not Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
+      height: 100vh;
+      background: linear-gradient(-45deg, #ff6ec4, #7873f5, #4ADEDE, #FF9D6C);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 6rem;
+      text-shadow: 0 0 10px #fff, 0 0 20px #f0f;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 10px;
+      color: #ffffff;
+      text-shadow: 0 0 5px rgba(255,255,255,0.8);
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      max-width: 600px;
+      padding: 0 20px;
+    }
+
+    .ufo {
+      position: absolute;
+      top: 30%;
+      left: -200px;
+      width: 150px;
+      animation: flyAcross 10s linear infinite;
+      z-index: 5;
+    }
+
+    @keyframes flyAcross {
+      0% { transform: translateX(0) rotate(0deg); }
+      50% { transform: translateX(110vw) rotate(10deg); }
+      100% { transform: translateX(0) rotate(-10deg); }
+    }
+
+    .btn-home {
+      margin-top: 30px;
+      background-color: #ffffff22;
+      color: white;
+      border: 2px solid white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-home:hover {
+      background-color: white;
+      color: #333;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 3rem;
+      }
+      .ufo {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img class="ufo" src="https://cdn-icons-png.flaticon.com/512/3216/3216067.png" alt="Flying UFO" />
+
+  <h1>404 Error</h1>
+  <h2>Oops! Page Not Found</h2>
+  <p>
+    It seems the page you're looking for has been abducted by aliens 🛸.<br/>
+    Don’t worry, our UFO is searching for it across the galaxy!
+  </p>
+
+  <a href="/" class="btn-home">Return to Home</a>
+
+</body>
+</html>
